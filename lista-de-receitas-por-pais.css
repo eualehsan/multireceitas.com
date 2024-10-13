@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* imagem da bandeira fixada*/
+body{
+background: #77777715;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+filter: opacity(-50);
+}
+/*estilo geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+#caixa1{
+  max-width: 720px;
+  margin:30px;
+  display: grid;
+  padding: 5px 0px;
+
+}
+/*cabeçalho*/
+header{
+  grid-area: header;
+  position: sticky;    top: 0px;
+
+}
+header > .interface{
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+   background-color: #545454;
+   cursor: pointer;  
+}
+
+header nav ul{
+  list-style-type: none;
+
+}
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+  /*transição de cores da nav do cabecalho */
+header nav ul :hover{
+  color: #ffcc33;
+  text-decoration: none;
+  transform: scale(1.2);
+  
+}
+header nav {
+  color: white;
+  justify-content: center;
+  max-width: 720px;
+  margin:50px;
+
+  aside {
+    grid-area: aside;
+    background-color: #ff9500;
+  }
+ 
+}
+.amarela{
+  color: #ffcc33;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.35);
+  border-radius: 15px;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+
+
+h1 {
+  font-weight: 700;
+  padding: 5px;
+}
+h2{
+  padding: 10px;
+  font-weight: 900;
+}
+li{
+  padding: 10px;
+}
+
+p{
+  padding: 20px 10px 60px 10px;
+}
+/* logo do site*/
+.logo video{
+  width: 150px;
+  height: auto;
+}
+/*incone de contato exposto no cabeçalho*/
+.bnt-login button{
+  color: #fc6b0a;
+  padding: 10px 10px;
+  padding: auto;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+/*estilização do corpo*/
+span{
+color: #fc6b0a;
+}
+
+#caixa1{
+  padding: 0px 40px;
+  height: auto;
+  z-index: -5;
+}
+
+/*card da receita*/
+#caixa5{
+  max-width: 720px;
+  height: 150px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.35);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#caixa5 img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15% 0 0 15%;
+  z-index: -5;
+}
+
+#caixa5 h2{
+  text-decoration: none;
+  margin-left: 2%;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 25px;
+  align-content: center;
+  z-index: -5;
+
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+/*fim do card da receita*/
+
+#caixa7{
+  max-width: 720px;
+  margin:30px;
+  display: grid;
+  padding: 15px 30px;
+  color: #fc6b0a;
+  background-color: #777777;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.35);
+}
+
+/*rodape*/
+footer{
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ffff;
+  background-color: transparent;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+#logo-footer{
+  display: flex;
+  width: 120px;
+  height: auto;
+}
+
+.link-rede-social{
+  text-decoration: none;
+}
+
+#footer-conteiner{
+  background-color: #ffcc33;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2% 7%;
+}
+
+.redes-sociais-conteiner h1{
+  margin-bottom: 5%;
+}
+
+#footer-redes-sociais{
+  display: flex;
+  gap: 5%;
+  margin-top: 5%;
+}
+
+#footer-redes-sociais .link-rede-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 7px;
+  border-radius: 50%;
+  color: #ffff;
+}
+
+#footer-redes-sociais .link-rede-social i{
+  font-size: 125%;
+}
+
+#footer-redes-sociais .link-rede-social:hover{
+  opacity: 0.6;
+  transition: all .5;
+}
+
+#instagram{
+  background:linear-gradient(#7f37c9, #ff2992, #ff9807)
+}
+
+#facebook{
+  background-color: #4267b3;
+}
+
+#whatsapp{
+  background-color: #25d366;
+}
+
+.lista-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  list-style: none;
+}
+
+.lista-footer .link-footer{
+  color: #383838;
+  text-decoration: none;
+}
+
+.lista-footer .link-footer:hover{
+  color:rgba(0, 0, 0, 0.35)
+}
+
+.footer-inscreva-se{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inscreva-se p{
+  color: #383838;
+}
+
+#input-grupo{
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color:  rgba(255, 255, 255, 0.928);
+  border-radius: 10px;
+}
+
+#input-grupo input{
+  all: unset;
+  padding: 1% 6%;
+}
+
+#input-grupo button{
+  background-color: #ff9500;
+  border: transparent;
+  color: #ffff;
+  font-size: 20px;
+  padding: 17px 12px;
+  height: 40%;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+}
+
+#input-grupo button:hover{
+  background-color: #ff9500ba;
+}
+
+#site-copyright{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #bc8d00;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: 400;
+}

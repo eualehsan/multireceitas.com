@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/footer-logo.jpg" type="image/x-icon">
+    <!-- LINKS EXTERNOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- # -->
+
+    <!-- ARQUIVOS LOCAIS .CSS -->
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- # -->
+
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="secao-1">
+        <!-- INICIO DO CABEÇALHO -->
+        <header>
+            <nav class="navegacao">
+                <video autoplay muted loop id="logo" src="./video/logo-video-sem-png.mp4" alt="logo"></video>
+                <ul class="lista-de-categorias">
+                    <li class="categoria"><a class="link-categoria" href="./brasileiras-lista-de-receitas.html">Brasileira</a></li>
+                    <li class="categoria"><a class="link-categoria" href="./mexico-lista-de-receitas.html">Mexicana</a></li>
+                    <li class="categoria"><a class="link-categoria" href="#">Portuguesa</a></li>
+                    <li class="categoria"><a class="link-categoria" href="./america-lista-de-receitas.html">Americana</a></li>
+                    <li class="categoria"><a class="link-categoria" href="./japonesa-lista-de-receitas.html">Japonesa</a></li>
+                </ul>
+                <div class="barra-pesquisa">
+                    <label for="seachInput"><img src="./img/search-icon.png" alt="icone de pesquisa"></label>
+                    <input type="text" id="searchInput" placeholder="O que quer cozinhar hoje?">
+                </div>
+            </nav>
+        </header>
+        <!-- FIM DO CABEÇALHO -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="./video/background-video.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div> 
+        <div class="saudacoes-conteiner">
+            <h1>Descubra sabores<br></h1>
+            <p>
+                Liberte sua paixão pela cozinha.<br>
+                Viaje o mundo dos sabores. <br>
+                Eleve suas habilidades culinárias.<br>
+            </p>
+            <button>Comece a cozinhar</button>
+        </div>
+    </div>
+
+    
+    <div class="secao-2">
+        <p class="sec2-title">Principais receitas</p>
+        <div class="carrossel">
+            <input type="radio" name="control" id="slide1" checked>
+            <input type="radio" name="control" id="slide2">
+            <input type="radio" name="control" id="slide3">
+            <input type="radio" name="control" id="slide4">
+            <input type="radio" name="control" id="slide5">
+    
+            <div class="slides">
+                <div class="slide" id="card1">
+                    <a href="./m-churros.html"><img src="./doces/churros.jpeg" alt=""></a>
+                    <span class="tempo">⏱️ 1h</span>
+                    <span class="titulo-receita">Churros com doce de leite</span>
+                </div>
+                <div class="slide" id="card2">
+                    <a href="./receitas/brasileiras/b-feijoada.html"><img src="https://th.bing.com/th/id/R.918069144dba89e0e0c6597a55b94581?rik=zzOdzg6VcG2z8w&pid=ImgRaw&r=0" alt=""></a>
+                    <span class="tempo">⏱️ 50 min</span>
+                    <span class="titulo-receita">Feijoada</span>
+                </div>
+                <div class="slide" id="card3">
+                    <a href="./m-guacamole.html"><img src="./lancherapido/guacamole.jpeg" alt=""></a>
+                    <span class="tempo">⏱️ 25min</span>
+                    <span class="titulo-receita">Guacamole com nachos</span>
+                </div>
+                <div class="slide" id="card4">
+                    <a href="./receitas/brasileiras/b-moqueca-de-peixe.html"><img src="https://naminhapanela.com/wp-content/uploads/2019/04/moqueca-de-peixe6-1900x1267.jpg" alt=""></a>
+                    <span class="tempo">⏱️ 45 min</span>
+                    <span class="titulo-receita">Moqueca de peixe</span>
+                </div>
+                <div class="slide" id="card5">
+                    <img src="./img/receitas-mexicanas/10-tamales.jpeg" alt="">
+                    <span class="tempo">⏱️ 40min</span>
+                    <span class="titulo-receita">Tamales</span>
+                </div>
+            </div>
+    
+            <div class="bolinhas">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-conteiner">
+            <div class="redes-sociais-conteiner">
+                <h1><img id="logo-footer" src="./img/footer-logo.jpg" alt="logo"></h1>
+
+                <div id="footer-redes-sociais">
+                    <a href="#" class="link-rede-social" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="link-rede-social" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="link-rede-social" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="lista-footer">
+                <li>
+                    <h3>Categorias</h3>
+                </li>
+                <li>
+                    <a href="./brasileiras-lista-de-receitas.html" class="link-footer">Comidas brasileiras</a>
+                </li>
+                <li>
+                    <a href="#" class="link-footer">Comidas portuguesas</a>
+                </li>
+                <li>
+                    <a href="./america-lista-de-receitas.html" class="link-footer">Comidas americanas</a>
+                </li>
+                <li>
+                    <a href="./mexico-lista-de-receitas.html" class="link-footer">Comidas mexicanas</a>
+                </li>
+                <li>
+                    <a href="./japonesa-lista-de-receitas.html" class="link-footer">Comidas japonesas</a>
+                </li>
+            </ul>
+
+            <ul class="lista-footer">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="#" class="link-footer">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#" class="link-footer">Termos de uso</a>
+                </li>
+                <li>                   
+                    <a href="#" class="link-footer">Privacidade</a>
+                </li>
+            </ul>
+ 
+            <div class="footer-inscreva-se">
+                <ul class="lista-footer">
+                    <li>
+                        <h3>Increva-se</h3>
+                    </li>
+                    <li>
+                        <p>Receba as melhores receitas do mundo em seu e-mail</p>
+                    </li>                    
+                    <li>
+                        <div id="input-grupo">
+                            <input type="email" placeholder="exemplo@email.com">
+                            <button><i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="site-copyright">
+            Desenvolvido por Alessandro Sampaio e Railson Igo <br>
+            &#169
+            2024 todos os direitos reservasdos
+        </div>
+    </footer>
+</body>
+</html>
